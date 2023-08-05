@@ -29,17 +29,28 @@ header{
 }
 .section{
  display: flex;
- height: 300px;
+ 
 }
 .section-left{
  background-color: aqua;
  width: 50%;
+ height: 300px;
 }
 .section-right {
  background-color: tomato;
- min-width: 50%;
+ width: 50%;
+ height: 300px;
 }
 footer {
  background-color: var(--FOOTER-BG-COLOR);
  height: var(--FOOTER-HEIGHT);
+}
+
+@media (max-width: 768px){
+ .section{
+  flex-direction: column;
+ }
+ .section-left, .section-right{
+  width: 100%;
+ }
 }
