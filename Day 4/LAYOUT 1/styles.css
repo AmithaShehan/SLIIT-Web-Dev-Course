@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: darkblue;
+  height: 50px;
+}
+
+main {
+  background-color: lightblue;
+  height: 700px;
+}
+
+footer {
+  background-color: darkgrey;
+  height: 200px;
+}
