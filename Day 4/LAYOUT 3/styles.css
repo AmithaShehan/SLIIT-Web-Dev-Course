@@ -1,35 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
 header {
   background-color: darkblue;
+  color: white;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  padding: 100px;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 50px;
 }
 
 main {
   background-color: lightblue;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
 }
 
-section{
+main button {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+main h5 {
+  padding: 10px 0;
+}
+
+section {
   height: 400px;
-  display: flex; 
+  display: flex;
+  font-size: 2em;
 }
 
-.left{
+section h6{
+  padding-bottom: 10px;
+}
+
+.left {
   background-color: grey;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  text-align: center;
+
 }
-.right{
+.left button {
   background-color: red;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+.right {
+  background-color: red;
+  color: white;
   width: 50%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+}
+.right button {
+  background-color: grey;
+  color: black;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
 }
 
 footer {
   background-color: black;
-  height: 100px;
+  /* height: 100px; */
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quick-links{
+  padding: 50px 100px;
 }
 
+footer h4{
+  padding-bottom: 10px;
+}
+footer li{
+  list-style-type: none;
+  padding: 10px 0px;
+}
+
+.social-links{
+  font-size: 2em;
+  padding-right: 100px;
+  display: flex;
+  column-gap: 100px;
+}
