@@ -1,0 +1,80 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container {
+ height: 100vh;
+ display: grid;
+ /* grid-template-columns: repeat(12, 1fr); */
+ grid-template-columns: 400px calc(100% - 400px);
+ /* grid-template-areas: "s s s c c c c c c c c c"; */
+
+}
+
+.sidebar {
+ /* grid-area: s; */
+ grid-column: 1/2;
+ background-color: rgba(190, 180, 180, 0.493);
+ padding: 5px;
+ border-radius: 10px;
+}
+
+.sidebar-img {
+ margin: 20px auto;
+ background-image: url(./img/amitha-shehan.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 350px;
+ width: 350px;
+}
+
+.sidebar-links, .sidebar-languages {
+ display: flex;
+ flex-direction: column;
+ padding-left: 25px;
+ margin-top: 20px;
+}
+.sidebar-languages{
+ padding-top: 15px;
+}
+
+.sidebar-links a {
+ /* text-decoration: none; */
+ font-size: 2.5em;
+ font-weight: 700;
+ color: rgb(53, 53, 53);
+ padding-top: 15px;
+}
+
+.sidebar-languages a{
+ font-size: 1.5em;
+ color: rgb(53, 53, 53);
+}
+
+.sidebar-links a:nth-child(1), .sidebar-languages a:nth-child(1){
+ text-decoration: none;
+}
+
+.sidebar-copyright{
+ height: 100px;
+ display: flex;
+ padding-left: 25px;
+ padding-top: 15px;
+ display: flex;
+ align-items: flex-end;
+}
+
+.content {
+ grid-column: 2/-1;
+ padding: 20px;
+}
+.content-heading{
+ font-size: 3em;
+}
+.content p{
+ font-size: 1.3em;
+ margin-top: 20px;
+}
