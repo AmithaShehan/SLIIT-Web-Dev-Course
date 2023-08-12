@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&family=Satisfy&display=swap');
+
+body{
+ font-family: 'Roboto', sans-serif;
+}
+h1{
+ font-size: 60px;
+}
+h2{
+ font-size: 48px;
+}
+h3{
+ font-size: 36px;
+}
+h4{
+ font-size: 28px;
+}
+h5{
+ font-size: 24px;
+}
+.navbar-top, .navbar-bottom{
+ display: flex;
+ justify-content: space-between;
+ height: 50px;
+ align-items: center;
+ border-bottom: 2px solid rgb(223, 223, 223);
+}
+.navbar-top li, .navbar-bottom li{
+ display: inline;
+ margin: 0 24px;
+}
+.brand-wrap{
+ height: 400px;
+ background-color: rgba(128, 128, 128, 0.185);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+
+}
+.brand-name{
+  font-family: 'Satisfy', cursive;
+ color: darkred;
+}
+.brand-subheading{
+ color: grey;
+}
+.navbar-bottom{
+ justify-content: center;
+ border-bottom: 2px solid rgb(223, 223, 223);
+ border-top: 2px solid rgb(223, 223, 223);
+}
+.navbar-bottom li a:hover{
+ color: tomato;
+ font-weight: 600;
+}
