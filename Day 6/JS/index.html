@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Basic JavaSript</title>
+ <style>
+  .discount {
+   color: red;
+  }
+ </style>
+</head>
+
+<body>
+ <script>
+  // window.alert('hello');
+
+  //primitive data types
+  //String
+  // var firstName = 'Amtiha';
+  // console.log('Data >', firstName);
+  // console.log('Data Type > '+ typeof(firstName));
+
+  // //numbers
+  // var age = 78.36;
+  // console.log(age);
+  // console.log(typeof(age));
+
+  // //boolean
+  // var isLoggedIn = true;
+  // console.log('Data >', isLoggedIn);
+  // console.log('Data Type > '+ typeof(isLoggedIn));
+
+  // //undefined
+  // var noIdea;
+  // console.log('Data >', noIdea);
+  // console.log('Data Type > '+ typeof(noIdea));
+
+  // //undefined
+  // var users = null;
+  // console.log('Data >', null);
+  // console.log('Data Type > '+ typeof(null));
+
+    //non-primitive data types
+    //object
+    //array
+    //regEx
+
+    //operators
+    //arithmetic operators
+    // var num1 = 10;
+    // var num2 = 13;
+    // var sum = num1 + num2;
+    // console.log(sum);
+    // var num3= '10'
+    // console.log('num1==num3', num1==num3);
+    // console.log('num1===num3', num1===num3);
+    // console.log('10==10', 10==10);
+    // console.log('true&&true', true&&true);
+
+    //conditional statements
+    // var age = 50;
+    // var discount = 0;
+    // if(age>100){
+    //  discount = 80;
+    // }
+    // else if(age>50){
+    //  discount = 50;
+    // }
+    // else if(age>30){
+    //  discount = 30;
+    // }
+    // else{
+    //  discount = 10;
+    // }
+    // document.write(`<h1>Discount : <span class="discount">${discount}%</span></h1>`)
+    // console.log('Discount : ' + discount + '%');
+    // // window.alert('Discount : ' + discount + '%')
+
+    //switch case - faster than if else
+
+
+    //for loop
+    //  var userInput1 = prompt('First Value');
+    //  var userInput2 = prompt('Second Value');
+    // for(var i = userInput1; i<=userInput2; i++){
+    //  console.log(i);
+    // }
+
+    // while (true) {
+    //  window.alert('true');
+    // }
+
+     //javascript functions
+     var userName = 'Amitha';
+     function printHello(userName){
+      console.log(`Hello ${userName}`);
+     }
+     printHello(userName);
+
+     function getSum(num1, num2){
+      return num1 + num2;
+     }
+     console.log(getSum(12,45));
+
+ </script>
+
+</body>
+
+</html>
